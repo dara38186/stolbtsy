@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Столбцы - О городе</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="gerb.png" type="image/png">
+    <meta name="keywords" content="фото Столбцов, управление Столбцы, глава Столбцов, о Столбцах" />
+    <meta name="description" content="Сайт города Столбцы. Новости. Управление. История. Галерея">
+</head>
+
+<body>
+<style>
+    .pr, .gal {
+    text-align: center;
+    background: antiquewhite;
+    border: 3px solid #ffda57;
+    width: 90%;
+    padding: 15px;
+    margin: 30px auto;
+    font-size: 36px;
+}
+.pr { border-radius: 70px; }
+.gal { border-radius: 10px; }
+/*  РУКОВОДСТВО */
+.photo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin: 40px 20px;
+}
+.photo-box {
+    background: white;
+    width: 180px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    text-align: center;
+}
+.ph1 { 
+    font-size: 16px;
+    font-weight: bold;
+    color:#1d0662;
+    min-height:60px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.ph2 { 
+    font-size: 14px;
+    color:#6495ED;
+    margin-top:10px;
+    font-style:italic;
+}
+.im1 {
+    width: 150px;
+    height: 170px;
+    border: 3px solid #1d0662;
+    border-radius: 6px;
+    object-fit: cover;
+}
+/* ГАЛЕРЕЯ */
+#thumbs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px 20px;
+    list-style: none;
+}
+#thumbs img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border: 3px solid #eeff00;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3s;
+}
+#thumbs img:hover { 
+    transform: scale(1.05); 
+}
+#thumbs img.active {
+    width: 90%;
+    max-width: 800px;
+    height: auto;
+    margin: 0 auto 30px;
+    display: block;
+    border-color: red;
+}
+</style>
+<nav class="navbar">
+    <div class="logo"> Столбцы - город для жизни </div>
+
+    <ul class="nav-links">
+        <li><a href="index.html"> Главная </a></li>
+        <li><a href="news.html"> Новости </a></li>
+        
+        <li class="dropdown">
+            <a href="about.html" class="dropbtn"> О городе </a>
+            <ul class="dropdown-content">
+                <li><a href="about.html#management"> Управление </a></li>
+                <li><a href="about.html#gal"> Галерея </a></li>
+            </ul>
+        </li>
+
+        <li><a href="history.html"> История </a></li>
+    </ul>
+</nav>
+
+<div class="nov">
+    <h1>О городе Столбцы</h1>
+    <p>Всё о нашем замечательном городе</p>
+</div>
+
+<div style="padding: 20px; max-width: 1000px; margin: 0 auto;">
+    <h2 style="text-align: center; color: #1d0662;">Основная информация</h2>
+    
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 30px 0;">
+        <div>
+            <h3>Географическое положение</h3>
+            <p>Город расположен на берегу реки Неман, в 65 км от Минска.</p>
+            <p>Является административным центром Столбцовского района.</p>
+            
+            <h3>Климат</h3>
+            <p>Умеренно-континентальный климат с мягкой зимой и тёплым летом.</p>
+        </div>
+        
+        <div>
+            <h3>Демография</h3>
+            <p><strong>Население:</strong> около 17,000 человек</p>
+            <p><strong>Площадь:</strong> 12.5 км²</p>
+            <p><strong>Основан:</strong> 1511 год (первое упоминание)</p>
+            <p><strong>Статус города:</strong> с 1978 года</p>
+        </div>
+    </div>
+</div>
+
+<div id="management">
+    <p class="pr"> Управление города </p>
+
+    <div class="photo">
+        <div class="photo-box">
+            <p class="ph1"> Атрушкевич Андрей Михайлович </p>
+            <img class="im1" src="im/атрушкевич.jpg" alt="Председатель">
+            <p class="ph2"> Председатель райисполкома </p>
+        </div>
+
+        <div class="photo-box">
+            <p class="ph1"> Бычковский Виталий Геннадьевич </p>
+            <img class="im1" src="im/зам1.jpeg" alt="Первый заместитель">
+            <p class="ph2"> Первый заместитель председателя </p>
+        </div>
+
+        <div class="photo-box">
+            <p class="ph1"> Лысая Жанна Николаевна </p>
+            <img class="im1" src="im/зам2.jpeg" alt="Заместитель">
+            <p class="ph2"> Заместитель председателя </p>
+        </div>
+
+        <div class="photo-box">
+            <p class="ph1"> Пашкевич Ирина Бонифациевна </p>
+            <img class="im1" src="im/зам3.jpeg" alt="Заместитель">
+            <p class="ph2"> Заместитель председателя </p>
+        </div>
+
+        <div class="photo-box">
+            <p class="ph1"> Савицкий Вадим Валерьянович </p>
+            <img class="im1" src="im/зам4.jpeg" alt="Заместитель">
+            <p class="ph2"> Заместитель председателя </p>
+        </div>
+    </div>
+</div>
+
+<div class="nov">
+    <h1>Фотогалерея города</h1>
+    <p>Лучшие фотографии нашего города</p>
+</div>
+
+<p class="gal" id="gal"> Фотографии Столбцов </p>
+
+<ul id="thumbs">
+    <li><img src="im/1_1.png" alt="Столбцы фото 1"></li>
+    <li><img src="im/2_1.jpg" alt="Столбцы фото 2"></li>
+    <li><img src="im/3_1.jpg" alt="Столбцы фото 3"></li>
+    <li><img src="im/4_1.jpg" alt="Столбцы фото 4"></li>
+    <li><img src="im/5_1.jpg" alt="Столбцы фото 5"></li>
+    <li><img src="im/6_1.jpg" alt="Столбцы фото 6"></li>
+    <li><img src="im/7_1.jpg" alt="Столбцы фото 7"></li>
+    <li><img src="im/8_1.jpg" alt="Столбцы фото 8"></li>
+    <li><img src="im/9_1.jpg" alt="Столбцы фото 9"></li>
+</ul>
+
+
+<footer class="footer">
+    <div class="footer-nav">
+        <a href="index.html">Главная</a>
+        <a href="news.html">Новости</a>
+        <a href="about.html">О городе</a>
+        <a href="history.html">История</a>
+    </div>
+    <p class="copyright">© 2025. Город Столбцы. Официальный сайт.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

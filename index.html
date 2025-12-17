@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Столбцы</title>
+       <link rel="stylesheet" href="style.css">
+       <link rel="icon" href="gerb.png" type="image/png">
+    <meta name="keywords" content="Столбцы, столбцы" />
+    <meta name="description" content="Сайт города Столбцы. Новости. Управление. История. Галерея">
+</head>
+
+<body>
+    <style>
+/* ВИДЕО  */
+.video {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.video-box {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    text-align: center;
+}
+.caption {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #7981d1;
+    text-shadow: 2px 2px 3px white;
+}
+video {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.2);
+}
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* Соотношение сторон 16:9 */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.2);
+}
+
+.video-wrapper video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Обрезка по размеру блока */
+    border-radius: 10px; /* Сохраняет закругления */
+}
+
+.footer-center {
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+.footer-center h3 {
+    font-size: 28px;
+    color: #ffda57;
+    margin-bottom: 10px;
+}
+.footer-center p {
+    font-size: 18px;
+}
+.contact-box input,
+.contact-box textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 10px;
+    font-size: 16px;
+}
+.contact-box textarea {
+    height: 120px;
+    resize: none;
+}
+.contact-box button {
+    padding: 10px 20px;
+    margin-top: 12px;
+    background: #ffda57;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.contact-box button:hover {
+    background: white;
+    color: #1d0662;
+}
+.inf {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #f5f5f5, #e0e0ff);
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    color: #1d0662;
+    font-family: 'Arial', sans-serif;
+}
+
+.inf-container {
+    display: flex;
+    justify-content: space-between; /* равномерное распределение колонок */
+    gap: 20px;
+    text-align: center;
+}
+
+.inf-column {
+    flex: 1; /* каждая колонка одинаковой ширины */
+    min-width: 220px;
+}
+
+.inf h4 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.inf p {
+    font-size: 1rem;
+    margin: 6px 0;
+}
+
+.inf a {
+    text-decoration: none;
+    color: #1d0662;
+    transition: color 0.3s;
+}
+
+.inf a:hover {
+    color: #7981d1;
+    text-decoration: underline;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .inf-container {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
+
+    </style>
+
+<nav class="navbar">
+    <div class="logo"> Столбцы - город для жизни </div>
+
+    <ul class="nav-links">
+        <li><a href="index.html"> Главная </a></li>
+        <li><a href="news.html"> Новости </a></li>
+        
+        <li class="dropdown">
+            <a href="about.html" class="dropbtn"> О городе </a>
+            <ul class="dropdown-content">
+                <li><a href="about.html#management"> Управление </a></li>
+                <li><a href="about.html"> Галерея </a></li>
+            </ul>
+        </li>
+
+        <li><a href="history.html"> История </a></li>
+    </ul>
+</nav>
+
+<div class="nov">
+    <h1>Добро пожаловать в Столбцы!</h1>
+    <p>Город с богатой историей и прекрасными людьми</p>
+</div>
+
+<div class="video">
+    <div class="video-box">
+        <p class="caption">Конец наших праздников</p>
+        <div class="video-wrapper">
+            <video src="im/video2.mp4" controls poster="im/v2.jpeg"></video>
+        </div>
+    </div>
+
+    <div class="video-box">
+        <p class="caption">Экскурсия по городу</p>
+        <div class="video-wrapper">
+            <video src="im/video1.mp4" controls poster="im/v1.jpeg"></video>
+        </div>
+    </div>
+</div>
+
+
+<div style="background-color:#EDEDED; border:2px solid #7A73FF; border-radius:15px; padding:20px; display:flex; justify-content:space-between; flex-wrap:wrap; max-width:900px; margin:auto; font-family:sans-serif;">
+  <div style="flex:1; min-width:200px; margin:10px;">
+    <strong>Наши контакты:</strong><br>
+    📞 <a href="tel:+375292931445">+375 29 293-14-45</a><br>
+    📞 <a href="tel:142"> 142 </a><br>
+    ✉️ <a href="mailto:info@stolbtcy.gov.by">info@stolbtcy.gov.by</a>
+  </div>
+  
+  <div style="flex:1; min-width:200px; margin:10px;">
+    <strong>Наши соцсети:</strong><br>
+    📸 <a href="https://instagram.com/stolbtsy.city" target="_blank">Instagram: stolbtsy.city</a><br>
+    💬 <a href="https://t.me/s/prostolbtsy/69734?ysclid=mj9tzzzxo3808517878" target="_blank">Telegram: Столбцы. Люди и события.</a> 
+  </div>
+  
+  <div style="flex:1; min-width:200px; margin:10px;">
+    <strong>Официальный сайт:</strong><br>
+    🌐 <a href="https://stolbtsy.gov.by" target="_blank">stolbtsy.gov.by</a>
+  </div>
+</div>
+
+
+
+<footer class="footer">
+
+    <div class="footer-center">
+        <h3>Связь с населением</h3>
+        <p>Вы можете оставить здесь свои жалобы, предложения и вопросы.</p>
+
+        <form class="contact-box" action="#" method="post">
+            <input type="text" name="name" placeholder="Ваше имя" required>
+            <textarea name="message" placeholder="Ваше сообщение..." required></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+
+    <div class="footer-nav">
+        <a href="index.html">Главная</a>
+        <a href="news.html">Новости</a>
+        <a href="about.html">О городе</a>
+        <a href="history.html">История</a>
+    </div>
+
+    <p class="copyright">© 2025. Город Столбцы. Официальный сайт.</p>
+    </p>
+
+</footer>
+
+</body>
+</html>
